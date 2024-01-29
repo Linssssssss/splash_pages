@@ -18,7 +18,7 @@ body {
 }
 .container {
   background: #fff;
-  height: 400px;
+  height: 500px;
   width: 800px;
   color: #033954;
   border-radius: 10px;
@@ -31,6 +31,7 @@ body {
   text-align: center;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 .social-links i {
   display: inline-block;
@@ -48,12 +49,35 @@ body {
 .social-links i:hover {
   transform: translateY(-5px)
 }
-.footer .input {
-  color: black;
+.footer {
+  display: flex;
+  align-items: center; 
+  color: #033954;
+}
+.footer input {
+  color: #033954;
+  margin-right: 10px;
 }
 .footer a {
   color: #033954;
   font-weight: 600
+}
+input{
+  font-size: medium;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #033954;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer input {
+  display: inline-block;
+  flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
   .container {

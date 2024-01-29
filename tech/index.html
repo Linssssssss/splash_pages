@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://demo1.brandfi.co.ke/page2/js/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -28,11 +30,56 @@
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-linkedin"></i>
         <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-solid fa-at"></i>
+        <a id="bundle-email-button"><i class="fa-solid fa-at"></i> </a>
+        <form
+          data-country-code="KE"
+          id="bundle-email-form"
+          class="login-form"
+          style="display: none; text-align: center"
+        >
+          <input
+            data-gjs-selectable="true"
+            data-gjs-stylable="false"
+            id="first_name"
+            name="first_name"
+            placeholder="Your first name"
+            required
+            type="text"
+            value=""
+          />
+          <input
+            data-gjs-selectable="true"
+            data-gjs-stylable="false"
+            id="last_name"
+            name="last_name"
+            placeholder="Your last name"
+            required
+            type="text"
+            value=""
+          />
+          <input
+            data-gjs-selectable="true"
+            data-gjs-stylable="false"
+            id="id_email"
+            name="email"
+            placeholder="Your email address"
+            required
+            type="email"
+            value=""
+          />
+
+          <input
+            id="validate_smtp_account"
+            name="validate_smtp_account"
+            type="hidden"
+            value="1"
+          />
+          <input id="email_login_submit" type="button" value="Connect" />
+          <input type="hidden" name="login-type" value="email_login" />
+        </form>
       </div>
       <div class="footer">
-        <input type="checkbox" />I have read and agreed to Techminds
-        <a href="">terms & policies</a>
+       <input type="checkbox">I have read and agreed to Techminds<a href="">terms & policies</a>
       </div>
     </div>
   </body>
