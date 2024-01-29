@@ -33,6 +33,9 @@ body {
   position: relative;
   overflow: hidden;
 }
+.expanded-container {
+  height: auto !important;
+}
 .social-links i {
   display: inline-block;
   font-size: 1.5rem;
@@ -59,37 +62,66 @@ body {
 }
 .footer a {
   color: #033954;
-  font-weight: 600
+  font-weight: 600;
+  margin-left: 5px;
 }
 input{
   font-size: medium;
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   color: #033954;
   border: 1px solid black;
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.login-form {
+  text-align: center;
+}
+.login-form input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+#email_login_submit {
+  cursor: pointer;
+  background-color: #033954;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 400;
+  transition: background-color 0.3s;
+}
+#email_login_submit:hover {
+  background-color: #033954;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 20px;
-    width: 90%;
+    width: 95%;
   }
   .social-links i {
-    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
   }
   .nav-bar {
     font-size: 1.5rem;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 10px;
   }
 
 }
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   .container {
-    padding: 30px;
+    padding: 20px;
     width: 80%;
   }
 
@@ -98,7 +130,7 @@ input{
   }
 
   .navbar {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -115,4 +147,31 @@ input{
   .navbar {
     font-size: 2rem;
   }
+}
+
+@media only screen and (max-width: 280px) {
+  .container {
+    width: 95%;
+    padding: 10px; 
+  }
+
+  .social-links {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 10px; 
+
+  h3 {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+}
 }

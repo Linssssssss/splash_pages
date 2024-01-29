@@ -17,18 +17,26 @@
     />
     <script src="https://demo1.brandfi.co.ke/page2/js/jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#bundle-email-button").click(function () {
+          $(".logo").show();
+          $("h3").hide();
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="logo">
         <img src="images/Techminds-logo.png" />
       </div>
-      <h3>Welcome to Techminds Wi-Fi network</h3>
-      <h3>To access our free WiFi use one of the login methods below</h3>
+      <h3>Welcome to Techminds Wi-Fi network<br /></h3>
+      <h3>To access our free WiFi use one of the login methods below<br /></h3>
       <div class="social-links">
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-linkedin"></i></a>
         <i class="fa-brands fa-x-twitter"></i>
         <a id="bundle-email-button"><i class="fa-solid fa-at"></i> </a>
         <form
@@ -79,7 +87,9 @@
         </form>
       </div>
       <div class="footer">
-       <input type="checkbox">I have read and agreed to Techminds<a href="">terms & policies</a>
+        <input type="checkbox" />I have read and agreed to Techminds<a href=""
+          >terms & policies</a
+        >
       </div>
     </div>
   </body>
